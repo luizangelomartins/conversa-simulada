@@ -1,0 +1,79 @@
+body {
+    background-color: black;
+}
+
+.imagem_padrao {
+    object-fit: cover;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.header_conversa {
+    color: aliceblue;
+    background-color: #252423c2;
+    padding: 0.5%;
+    width: 21%;
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.margin_inicial {
+    margin-top: 16%;
+}
+
+.painel {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 5%;
+}
+
+.usuario1 {
+    background-color: #537A5A;
+}
+
+.usuario2 {
+    background-color: #314CDD;
+}
+
+.controles_principal {
+    display: flex;
+    justify-content: center;
+    margin: 1% 0;
+    gap: 5px;
+}
+
+.nova_div_container_text_user2 {
+    display: flex;
+    justify-content: end;
+    flex-direction: row-reverse;
+}
+
+.div_class_container_text {
+    display: flex;
+    align-items: center;
+}
+
+.display_padrao {
+    display: flex;
+    flex-direction: column;
+}
+
+.fonte_subtitulo {
+    font-size: 9px;
+}
+
+.principal {
+    height: 70vh;
+    max-height: 70vh;
+    color: white;
+    padding: 1%;
+    width: 20%;
+    overflow-y: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../background/frieren.jpg);
+    background-size: cover;
+    background-position: center;
+}
