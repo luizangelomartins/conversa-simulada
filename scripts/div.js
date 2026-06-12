@@ -16,7 +16,7 @@ function ObterImagensConversaGrupo() {
 
     let imagem1 = listVolatil[Math.floor(Math.random() * listVolatil.length)];
     const img_container = document.getElementById("imagem_conversa_grupo");
-    img_container.src = `../imagem/${imagem1}`;
+    img_container.src = `./imagem/${imagem1}`;
 
     listVolatil = listVolatil.filter(item => item !== imagem1);
     imagemUser1 = listVolatil[Math.floor(Math.random() * listVolatil.length)];
@@ -26,7 +26,7 @@ function ObterImagensConversaGrupo() {
 
     const pai_container = document.getElementById("principal");
     let backgroundConversaGrupo = listaBackground[Math.floor(Math.random() * listaBackground.length)];
-    pai_container.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../background/${backgroundConversaGrupo})`;
+    pai_container.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./background/${backgroundConversaGrupo})`;
 }
 
 async function conversaSimulada() {
@@ -170,7 +170,7 @@ function adicionarDivUser1(texto) {
 
     const img_user1_container = document.getElementById(`div_imagem_user1_${contador}`);
     const img_user1 = document.createElement("img");
-    img_user1.src = `../imagem/${imagemUser1}`;
+    img_user1.src = `./imagem/${imagemUser1}`;
     img_user1.style.objectFit = "cover";
     img_user1.style.height = "40px";
     img_user1.style.borderRadius = "50%";
@@ -216,7 +216,7 @@ function adicionarDivUser2(texto) {
 
     const img_user1_container = document.getElementById(`div_imagem_user1_${contador}`);
     const img_user1 = document.createElement("img");
-    img_user1.src = `../imagem/${imagemUser2}`;
+    img_user1.src = `./imagem/${imagemUser2}`;
     img_user1.style.objectFit = "cover";
     img_user1.style.height = "40px";
     img_user1.style.borderRadius = "50%";
